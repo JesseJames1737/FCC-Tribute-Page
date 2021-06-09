@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <style>
     .main-image {
-      width: 750px;
-      height: 500px;
+      width: 1000px;
+      height: auto;
+      margin-top: 50px;
     }
 
     img {
@@ -11,6 +12,41 @@
     }
     .box {
         text-align: center;
+        background-color: rgb(255, 255, 255);
+        margin: 25px; 
+    }
+
+    .background {
+        background-color: rgb(240, 240, 240);
+        margin: 50px;
+    }
+
+    .centered-text {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif
+    }
+
+    .tribute-info {
+        margin-left: 600px;
+        margin-right: 600px; 
+        line-height: 1.5em;
+        font-family: Helvetica, Arial, sans-serif
+    }
+
+    li {
+        margin-bottom: 1.25em;
+        font-family: Helvetica, Arial, sans-serif
+    }
+
+    h3 {
+        padding-bottom: 50px;
+        font-family: Helvetica, Arial, sans-serif
+    }
+
+    .caption {
+        text-align: center;
+        padding-bottom: 50px;
+        font-family: Helvetica, Arial, sans-serif
     }
 
 </style>
@@ -19,19 +55,19 @@
         <head>
             <title id="title">Paul Tribute Page</title>
         </head>
+    <div id='background-div' class='background'>
         <main id="main">
             <body>
-                <h1>Paul, Disciple of Jesus Christ</h1>
-                <p>Drastic Conversion</p>
+                <h1 class='centered-text'>Paul, Disciple of Jesus Christ</h1>
+                <p class='centered-text'><strong>Drastic Conversion</strong></p>
 
                 <div class='box' id='img-div'>
                     <img id='image' class='main-image' src='https://cdn.britannica.com/93/130093-050-4926C50E/Paul-the-Apostle-epistle-prison-Ephesians.jpg' alt='paul the apostle in prison'>
-                    
+                    <p class='caption' id='image-caption'>Paul was in prison throughout most of his ministry. He wrote almost half of the new testiment behind bars.</p>
                 </div>
-                <br>
-                <p class='box' id='image-caption'>Paul was in prison throughout most of his ministry. He wrote almost half of the new testiment behind bars.</p>
-                <div id='tribute-info'>
-                    <h3>Paul's Journey:</h3>
+               
+                <div class='tribute-info' id='tribute-info'>
+                    <h3 class='centered-text'>Paul's Journey:</h3>
                     <ul>
                         <li><strong>Birth:</strong> Born an Israelite in Tarsus of Celicia</li>
                         <li><strong>Citazenship:</strong> Of the tribe of Benjamin, a "Hebrew of the Hebrews" (Phil 3:5) A Roman citizen by birthright</li>
@@ -45,12 +81,12 @@
                 </div>
 
                 <div id='quote'>
-                    <p class='box'><em>"We walk by faith, not by sight"</em></p>
-                    <p class='box'>-- Paul, the Apostle of Jesus Christ of Nazareth</p>
+                    <p class='centered-text'><em>"We walk by faith, not by sight"</em></p>
+                    <p class='centered-text'>-- Paul, the Apostle of Jesus Christ of Nazareth</p>
                 </div>
 
-                <h3>Paul's life was full of adventure. If you'd like to know more details, open your Bible starting in Galatians, or visit his <a href='https://en.wikipedia.org/wiki/Paul_the_Apostle' id='tribute_link' target='_blank'>Wikipedia page.</a></h3>
+                <h3 class='centered-text'>Paul's life was full of adventure. If you'd like to know more details, open your Bible starting in Galatians, or visit his <a href='https://en.wikipedia.org/wiki/Paul_the_Apostle' id='tribute_link' target='_blank'>Wikipedia page.</a></h3>
             </body>
         </main>
-        
+    </div>   
     </html>
